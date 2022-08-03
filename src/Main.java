@@ -27,15 +27,15 @@ public class Main {
         int v7 = 438000000;
         boolean v8 = false; */
 
-        /*Fourth example shows concationation working*/
+        /*Fourth example shows concationation working
         String thanks = "Thank you,";
         String name = "miguel!";
         String order = "Your order number is #";
         int previousOrder = 715;
 
         System.out.println(thanks+" "+name.toUpperCase());
-        System.out.println(order+(previousOrder+1));
-        
+        System.out.println(order+(previousOrder+1)); */
+
         /*This fifth example is to help user find how much paint they need to paint a wall
         Scanner width = new Scanner(System.in);  // Create a Scanner object for width
         System.out.println("Enter width of wall in metres:");
