@@ -3,12 +3,14 @@ public class WallCalcs {
     private int wallWidth;
     private int wallHeight;
     private int NoCoats;
+    private float wallArea;
 
     public WallCalcs() {
         this.NoWalls = NoWalls;
         this.wallWidth = wallWidth;
         this.wallHeight = wallHeight;
         this.NoCoats = NoCoats;
+        this.wallArea = wallArea;
     }
 
     public int getNoWalls() {
@@ -23,6 +25,9 @@ public class WallCalcs {
     public int getNoCoats() {
         return NoCoats;
     }
+    public float getWallArea() {
+        return wallArea;
+    }
 
     public void setNoCoats(int noCoats) {
         NoCoats = noCoats;
@@ -36,17 +41,26 @@ public class WallCalcs {
     public void setWallHeight(int wallHeight) {
         this.wallHeight = wallHeight;
     }
+    public void setWallArea(float wallArea) {
+        this.wallArea = wallArea;
+    }
 
-    public float calcQuadrilateral(){
+    public float calcQuadrilateral(int wallWidth, int wallHeight){
         float wallArea = wallWidth * wallHeight;
 
         return wallArea;
     }
 
-    public float calcTriangle(){
+    public float calcTriangle(int wallWidth, int wallHeight){
         float wallArea = (wallWidth * wallHeight)/2;
 
         return wallArea;
+    }
+
+    public float calcPaintNeeded(float wallArea, int noCoats){
+        float paintNeeded = wallArea * noCoats;
+
+        return paintNeeded;
     }
 
 
