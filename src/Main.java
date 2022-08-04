@@ -3,8 +3,6 @@ import java.util.*;
 public class Main {
     public static void main(String args[]){
 
-
-
         Scanner width = new Scanner(System.in);  // Create a Scanner object for width
         System.out.println("Enter width of wall in metres:");
         float wallWidth = width.nextLong();  // Read user input
