@@ -1,3 +1,4 @@
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class Wall {
@@ -25,15 +26,19 @@ public class Wall {
     public float getWallWidth() {
         return wallWidth;
     }
+
     public float getWallHeight() {
         return wallHeight;
     }
+
     public int getNoCoats() {
         return NoCoats;
     }
+
     public float getWallArea() {
         return wallArea;
     }
+
     public String getPaintType() {
         return paintType;
     }
@@ -41,18 +46,23 @@ public class Wall {
     public void setWallNo(int wallNo) {
         this.wallNo = wallNo;
     }
+
     public void setNoCoats(int noCoats) {
         NoCoats = noCoats;
     }
+
     public void setWallWidth(float wallWidth) {
         this.wallWidth = wallWidth;
     }
+
     public void setWallHeight(float wallHeight) {
         this.wallHeight = wallHeight;
     }
+
     public void setWallArea(float wallArea) {
         this.wallArea = wallArea;
     }
+
     public void setPaintType(String paintType) {
         this.paintType = paintType;
     }
@@ -60,6 +70,7 @@ public class Wall {
     @Override
     public String toString() {
         return "Wall{" +
+                "wallNo=" + wallNo +
                 ", wallWidth=" + wallWidth +
                 ", wallHeight=" + wallHeight +
                 ", NoCoats=" + NoCoats +
